@@ -122,8 +122,20 @@ Traditional PID controllers require manual tuning, which is time-consuming and n
 ## ✅ Key Figures
 
 ### 🔹 Confusion Matrix: PID (DecisionTree)
+<img width="1800" height="1500" alt="CM_PID_output_class_DecisionTree" src="https://github.com/user-attachments/assets/a7fce4f7-0fc4-4f14-8032-e30b036343b1" />
 
-!(I:\Self Study\python study\A Practical Industrial ML Applications for Smart Manufacturing Temperature Regulation\outputs\CM_PID_output_class_DecisionTree.png)
+
+### 🔹 Confusion Matrix: PID (KNN)
+<img width="1800" height="1500" alt="CM_PID_output_class_KNN" src="https://github.com/user-attachments/assets/7e35e85f-bfde-4796-b9b2-15eaf605fb3d" />
+
+### 🔹 Confusion Matrix: PID (LogisticRegression)
+<img width="1800" height="1500" alt="CM_PID_output_class_LogisticRegression" src="https://github.com/user-attachments/assets/6fb1eab4-6a0c-4344-9f13-8e47bfb12cef" />
+
+### 🔹 Confusion Matrix: PID (RandomForest)
+<img width="1800" height="1500" alt="CM_PID_output_class_RandomForest" src="https://github.com/user-attachments/assets/691728de-f6a3-4962-9975-99b0d8e55887" />
+
+### 🔹 Confusion Matrix: PID (SVM)
+<img width="1800" height="1500" alt="CM_PID_output_class_SVM" src="https://github.com/user-attachments/assets/8b29d09b-87e9-43c2-bddc-2c0d4bb024b8" />
 
 ### 🔹 Controller Comparison Plot
 ![PID_vs_Fuzzy_vs_ML](figures/PID_vs_Fuzzy_vs_ML.png)

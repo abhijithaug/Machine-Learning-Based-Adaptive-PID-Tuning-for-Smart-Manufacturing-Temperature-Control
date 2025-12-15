@@ -1,7 +1,7 @@
-# 🔥 ML-Based Adaptive PID Tuning for Smart Manufacturing Temperature Control
+#  Machine Learning-Based Adaptive PID Tuning for Smart Manufacturing Temperature Control
 
 
-## 📘 Overview
+##  Overview
 
 This repository presents a comprehensive machine learning and control systems framework for:
 
@@ -15,7 +15,7 @@ This work is part of a larger research initiative on intelligent control systems
 
 ---
 
-## 🏭 Industrial Context
+##  Industrial Context
 
 Temperature regulation is critical in smart manufacturing systems such as:
 
@@ -27,7 +27,7 @@ Temperature regulation is critical in smart manufacturing systems such as:
 
 Traditional PID controllers require manual tuning, which is time-consuming and non-adaptive. This study demonstrates how machine learning can automate gain selection and improve controller performance.
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ├── data/ │ 
 └── Smart Manufacturing Temperature Regulation Dataset.csv 
@@ -43,9 +43,9 @@ Traditional PID controllers require manual tuning, which is time-consuming and n
 
 ---
 
-## ✅ Phase 1: ML-Based Gain Classification
+## Phase 1: ML-Based Gain Classification
 
-### 🎯 Classification Targets
+###  Classification Targets
 
 - Kp_class  
 - Ki_class  
@@ -53,7 +53,7 @@ Traditional PID controllers require manual tuning, which is time-consuming and n
 - PID_output_class  
 - Fuzzy_PID_output_class  
 
-### 🧠 Models Used
+###  Models Used
 
 - Random Forest  
 - KNN  
@@ -61,7 +61,7 @@ Traditional PID controllers require manual tuning, which is time-consuming and n
 - Decision Tree  
 - SVM  
 
-### 📊 Sample Results: Kp_class Classification
+###  Sample Results: Kp_class Classification
 
 | Model              | Accuracy | Precision | Recall | F1-score |
 |-------------------|----------|-----------|--------|----------|
@@ -71,13 +71,13 @@ Traditional PID controllers require manual tuning, which is time-consuming and n
 | Decision Tree      | 0.35     | 0.35      | 0.35   | 0.35     |
 | SVM                | 0.31     | 0.31      | 0.31   | 0.31     |
 
-📌 *Logistic Regression and Decision Tree performed best for gain classification.*
+ *Logistic Regression and Decision Tree performed best for gain classification.*
 
 ---
 
-## ✅ Phase 2: Controller Comparison
+##  Phase 2: Controller Comparison
 
-### 🧪 Controllers Simulated
+###  Controllers Simulated
 
 - Classical PID  
 - Fuzzy Logic Controller (Mamdani-style)  
@@ -95,19 +95,19 @@ Traditional PID controllers require manual tuning, which is time-consuming and n
 | Fuzzy      | 780.97         | NaN               | 0.0            | –10.97                   | 103859  | 2.64e7   |
 | PID + ML   | 780.91         | NaN               | 0.0            | +1.49                    | 97601   | 2.26e7   |
 
-📌 *These metrics are not yet meaningful due to simulation artifacts. Overshoot and rise time logic must be corrected for cooling systems.*
+ *These metrics are not yet meaningful due to simulation artifacts. Overshoot and rise time logic must be corrected for cooling systems.*
 
 ---
 
-## ✅ Phase 3: Gain Regression (Continuous Prediction)
+##  Phase 3: Gain Regression (Continuous Prediction)
 
-### 📉 Models Used
+###  Models Used
 
 - Random Forest Regressor  
 - MLP Regressor  
 - XGBoost Regressor  
 
-### 📊 Sample Results: Kp Regression
+###  Sample Results: Kp Regression
 
 | Model         | RMSE   | MAE    | R²     |
 |---------------|--------|--------|--------|
@@ -115,11 +115,11 @@ Traditional PID controllers require manual tuning, which is time-consuming and n
 | Neural Net    | 0.342  | 0.280  | –0.550 |
 | XGBoost       | 0.295  | 0.248  | –0.153 |
 
-📌 *Negative R² indicates poor regression performance — classification is more robust for gain prediction.*
+ *Negative R² indicates poor regression performance — classification is more robust for gain prediction.*
 
 ---
 
-## ✅ Key Figures
+## Key Figures
 
 ### 🔹 Confusion Matrix: PID (DecisionTree)
 <img width="1800" height="1500" alt="CM_PID_output_class_DecisionTree" src="https://github.com/user-attachments/assets/a7fce4f7-0fc4-4f14-8032-e30b036343b1" />
@@ -138,11 +138,15 @@ Traditional PID controllers require manual tuning, which is time-consuming and n
 <img width="1800" height="1500" alt="CM_PID_output_class_SVM" src="https://github.com/user-attachments/assets/8b29d09b-87e9-43c2-bddc-2c0d4bb024b8" />
 
 ### 🔹 Controller Comparison Plot
-![PID_vs_Fuzzy_vs_ML](figures/PID_vs_Fuzzy_vs_ML.png)
+<img width="4167" height="5992" alt="Combined_Model_Comparison_All_Targets" src="https://github.com/user-attachments/assets/6c20f267-616b-4c84-8586-c35e328a6bcf" />
+
+### 🔹 PID vs Fuzzy Output
+<img width="3567" height="1768" alt="pid_vs_fuzzy_output" src="https://github.com/user-attachments/assets/cb27b3a3-b9ba-4c36-a5c6-31cf58b472e6" />
+
 
 ---
 
-## 🎓 Research Significance
+## Research Significance
 
 This study demonstrates:
 
@@ -154,7 +158,7 @@ This study demonstrates:
 
 ---
 
-## 🚀 Next Steps
+##  Next Steps
 
 - Correct simulation metrics for cooling dynamics  
 - Implement real-time ML-based gain scheduling  
@@ -164,15 +168,15 @@ This study demonstrates:
 
 ---
 
-## 📜 Citation
+##  Citation
 
 If you use this work, please cite me
 
 
 ---
----
 
-## 🤝 Contributions
+
+##  Contributions
 
 Contributions and collaborations are welcome.  
 Please open an issue or submit a pull request.

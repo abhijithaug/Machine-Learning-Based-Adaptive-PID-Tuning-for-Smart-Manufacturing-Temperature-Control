@@ -121,8 +121,8 @@ Traditional PID controllers require manual tuning, which is time-consuming and n
 
 ## ✅ Key Figures
 
-### 🔹 Confusion Matrix: Kp_class (Random Forest)
-![CM_Kp_class_RandomForest](figures/CM_Kp_class_RandomForest.png)
+### 🔹 Confusion Matrix: PID (DecisionTree)
+!"I:\Self Study\python study\A Practical Industrial ML Applications for Smart Manufacturing Temperature Regulation\outputs\CM_PID_output_class_DecisionTree.png"
 
 ### 🔹 Controller Comparison Plot
 ![PID_vs_Fuzzy_vs_ML](figures/PID_vs_Fuzzy_vs_ML.png)
